@@ -1,0 +1,4 @@
+
+blueprints = [
+    "admin:test:bp"
+]
