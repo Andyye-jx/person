@@ -16,7 +16,6 @@ class Api(_Api):
             return self.make_response({
                 'code': 'Method_Not_Allowed'
             }, 405)
-
         if isinstance(e, APIException):
             error = e
             msg = error_code.get(error, '')

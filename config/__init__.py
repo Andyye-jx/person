@@ -21,9 +21,13 @@ class Config:
     admin_port = 5001
     app_port = 5556
     cache_redis_url = "redis://:123456@127.0.0.1:6379/0"
-    database_url = "mysql+pymysql://root:KLAEKHiwi3/S@127.0.0.1:3306/sino_local"
+    database_url = "mysql+pymysql://root:KLAEKHiwi3/S@127.0.0.1:3306/person"
     celery_broker_url = "redis://:123456@127.0.0.1:6379/1"
     celery_result_backend = "redis://:123456@127.0.0.1:6379/2"
+    # app token密钥
+    app_token_secret_key = ""
+    # admin token密钥
+    admin_token_secret_key = ""
 
 
 class ConfigFromFile(Config):
