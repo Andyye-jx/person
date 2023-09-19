@@ -7,4 +7,4 @@ bp = Blueprint("other", __name__, url_prefix="")
 
 api = Api(bp)
 # url_prefix为空的话，这里要访问/other/setting，就得
-api.add_resource(B, "/other/setting")
+# api.add_resource(B, "/other/setting")
